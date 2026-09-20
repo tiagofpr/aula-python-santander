@@ -17,3 +17,4 @@ mensagem = 'Ola turma'
 #Booleanos (bool)
 maior_de_idade = True
 tem_desconto= False
+#valores booleanos são True ou False, e começam com letra maiúscula
