@@ -80,3 +80,34 @@ def somar_3(x):
 somar = lambda x: x + 3
 
 print("Soma com função definida pelo usuário:", somar_3(5))  # Saída: 8
+
+#Documentação de funções
+
+"""
+    A documentação de funções em Python é feita usando docstrings, que são strings de documentação colocadas logo após a definição da função. 
+    Elas fornecem informações sobre o propósito da função, seus parâmetros e o valor de retorno. 
+    As docstrings são acessíveis em tempo de execução e podem ser visualizadas usando a função help().
+"""
+
+def area_retangulo(base, altura):
+    """
+    Calcula a área de um retângulo.
+
+    Parâmetros:
+    base (float): A base do retângulo.
+    altura (float): A altura do retângulo.
+
+    Retorna:
+    float: A área do retângulo.
+    """
+    return base * altura
+
+#Funções com numeros de variavel de argumentos
+def soma_variacel(*numeros):
+    total = 0
+    for numero in numeros:
+        total += numero
+    return total
+
+print("Soma de vários números:", soma_variacel(1, 2, 3, 4, 5))  # Saída: 15
+print("Soma de outros números:", soma_variacel(10, 20, 30))  # Saída: 60
